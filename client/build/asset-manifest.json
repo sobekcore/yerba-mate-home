@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.8355f699.chunk.css",
-    "main.js": "/static/js/main.d3f4f254.chunk.js",
-    "main.js.map": "/static/js/main.d3f4f254.chunk.js.map",
+    "main.css": "/static/css/main.e5c6ca69.chunk.css",
+    "main.js": "/static/js/main.f05a25f7.chunk.js",
+    "main.js.map": "/static/js/main.f05a25f7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f0171909.js",
     "runtime-main.js.map": "/static/js/runtime-main.f0171909.js.map",
     "static/js/2.013ec967.chunk.js": "/static/js/2.013ec967.chunk.js",
     "static/js/2.013ec967.chunk.js.map": "/static/js/2.013ec967.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8355f699.chunk.css.map": "/static/css/main.8355f699.chunk.css.map",
+    "static/css/main.e5c6ca69.chunk.css.map": "/static/css/main.e5c6ca69.chunk.css.map",
     "static/js/2.013ec967.chunk.js.LICENSE.txt": "/static/js/2.013ec967.chunk.js.LICENSE.txt",
     "static/media/loading.5242dca2.svg": "/static/media/loading.5242dca2.svg",
     "static/media/index.css": "/static/media/yerba.0359d372.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.f0171909.js",
     "static/js/2.013ec967.chunk.js",
-    "static/css/main.8355f699.chunk.css",
-    "static/js/main.d3f4f254.chunk.js"
+    "static/css/main.e5c6ca69.chunk.css",
+    "static/js/main.f05a25f7.chunk.js"
   ]
 }
