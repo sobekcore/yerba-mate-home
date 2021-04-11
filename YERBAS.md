@@ -15,6 +15,7 @@
 [x] Pipore - Argentina // sobekcore \
 [x] Playadito - Argentina // sobekcore \
 [x] Puntero - Paraguay // sobekcore \
+[x] Rosamonte - Argentina // sobekcore \
 [x] Ruvicha - Paraguay // sobekcore \
 [x] Selecta - Paraguay // sobekcore \
 [x] Taragui - Argentina // sobekcore
