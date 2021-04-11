@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.afd8deaf.chunk.css",
-    "main.js": "/static/js/main.da2e6daa.chunk.js",
-    "main.js.map": "/static/js/main.da2e6daa.chunk.js.map",
+    "main.js": "/static/js/main.6dfaec6b.chunk.js",
+    "main.js.map": "/static/js/main.6dfaec6b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f0171909.js",
     "runtime-main.js.map": "/static/js/runtime-main.f0171909.js.map",
     "static/js/2.57b2ad0d.chunk.js": "/static/js/2.57b2ad0d.chunk.js",
@@ -10,13 +10,17 @@
     "index.html": "/index.html",
     "static/css/main.afd8deaf.chunk.css.map": "/static/css/main.afd8deaf.chunk.css.map",
     "static/js/2.57b2ad0d.chunk.js.LICENSE.txt": "/static/js/2.57b2ad0d.chunk.js.LICENSE.txt",
+    "static/media/about.03070536.svg": "/static/media/about.03070536.svg",
+    "static/media/api.13a58a57.svg": "/static/media/api.13a58a57.svg",
+    "static/media/home.78c6e013.svg": "/static/media/home.78c6e013.svg",
     "static/media/loading.5242dca2.svg": "/static/media/loading.5242dca2.svg",
+    "static/media/mate.e4c7c5ca.svg": "/static/media/mate.e4c7c5ca.svg",
     "static/media/index.css": "/static/media/yerba.0359d372.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f0171909.js",
     "static/js/2.57b2ad0d.chunk.js",
     "static/css/main.afd8deaf.chunk.css",
-    "static/js/main.da2e6daa.chunk.js"
+    "static/js/main.6dfaec6b.chunk.js"
   ]
 }
