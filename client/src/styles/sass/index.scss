@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+// Global values
+$main-white: #EDF5E1;
+$main-orange: #F1B24A;
+
+$light-green: #9DC88D;
+$medium-green: #4D774E;
+$dark-green: #164A41;
+
+* {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    $medium-green -25%,
+    $light-green 125%
+  );
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+::selection {
+  background: $dark-green;
+  color: $main-orange;
+}
+
+img {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: $main-white;
+  background: $main-orange;
+  border-radius: 5px;
+  padding: 0 6px;
+
+  &::selection {
+    background: $main-orange;
+    color: $dark-green;
+  }
+}
+
+.nav-offset {
+  margin-left: 54px;
+}
+
+.center-div {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+// Importing Sass modules
+@import "./error.scss";
+@import "./navbar.scss";
+@import "./article.scss";
+@import "./home.scss";
+@import "./database.scss";
+@import "./api.scss";

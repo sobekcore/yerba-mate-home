@@ -1,0 +1,19 @@
+.api__endpoint {
+  display: block;
+  margin: 24px 0;
+
+  .api__endpoint__href {
+    display: block;
+    background: $medium-green;
+    border-radius: 8px;
+    text-align: left;
+    padding: 3px 8px;
+    margin: 6px 8px;
+    word-break: break-all;
+  }
+
+  .api__endpoint__href--pathname {
+    color: $main-orange;
+    word-break: keep-all;
+  }
+}

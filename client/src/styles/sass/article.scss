@@ -1,0 +1,24 @@
+.article {
+  width: 960px;
+  max-width: calc(100% - 50px);
+  margin: 0 auto;
+  padding-top: 40px;
+
+  .article__title {
+    font: bold 36px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: $main-white;
+    padding-top: 25px;
+
+    &.build {
+      text-align: center;
+    }
+  }
+
+  .article__p {
+    font: 18px "Open Sans", sans-serif;
+    font-weight: 600;
+    color: $main-white;
+    margin: 14px 0;
+  }
+}

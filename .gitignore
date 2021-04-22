@@ -1,6 +1,5 @@
-# local React files
-client/*
-!build/
+# dependencies
+client/node_modules
 
 # DB_CONNECT
 .env

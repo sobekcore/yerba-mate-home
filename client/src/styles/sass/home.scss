@@ -1,0 +1,106 @@
+#wrapper {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: 100vh;
+
+  #title {
+    font: bold 60px "Open Sans", sans-serif;
+    color: $main-white;
+    text-align: center;
+    padding: 12px 0;
+    margin: auto 0;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+
+    .home__fragment {
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-height: 230px;
+
+      .home__fragment__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.33;
+        border-radius: 40px 40px 0 0;
+      }
+
+      .home__fragment__bg.about {
+        background: url("../../assets/question-marks.jpg") no-repeat center center / cover;
+      }
+
+      .home__fragment__bg.database {
+        background: url("../../assets/yerba.jpg") no-repeat center center / cover;
+      }
+
+      .home__fragment__bg.api {
+        background: url("../../assets/server-room.jpg") no-repeat center center / cover;
+      }
+
+      .home__fragment__text {
+        position: relative;
+        font: 18px "Open Sans", sans-serif;
+        background: rgba($medium-green, 0.6);
+        color: $main-white;
+        border-radius: 14px;
+        padding: 24px 16px;
+        margin: 46px;
+        text-align: center;
+        cursor: pointer;
+        transition:
+          0.4s background,
+          0.45s box-shadow;
+
+        .home__fragment__text--title {
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          color: $main-white;
+
+          .icon {
+            width: 30px;
+            transform: translateY(16%);
+          }
+        }
+      }
+
+      .home__fragment__text:hover {
+        background: rgb($medium-green, 0.85);
+        box-shadow: 0 0 22px black;
+      }
+    }
+  }
+
+  @media(max-width: 999px) {
+    #title {
+      padding: 26px 0;
+    }
+
+    .home {
+      grid-template-columns: 1fr;
+
+      .home__fragment {
+        .home__fragment__bg {
+          border-radius: 0;
+        }
+
+        .home__fragment__bg.about {
+          border-radius: 40px 40px 0 0;
+        }
+      }
+    }
+  }
+}
+
+
+#title {
+  font: bold 60px "Open Sans", sans-serif;
+  color: $main-white;
+  text-align: center;
+  padding: 12px 0;
+  margin: auto 0;
+}

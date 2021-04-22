@@ -1,0 +1,85 @@
+.database__title {
+  font: bold 38px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: $main-white;
+  padding: 65px 15px 0 15px;
+}
+
+.database__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 20px 65px 20px;
+
+  .database__input__box {
+    display: flex;
+    align-items: center;
+    border: 4px solid $dark-green;
+    padding: 8px 14px;
+    border-radius: 16px;
+    max-width: 95%;
+    width: 500px;
+
+    .database__input__box--field {
+      border: none;
+      outline: none;
+      padding: 3px;
+      font: 22px "Open Sans", sans-serif;
+      font-weight: 600;
+      background: none;
+      color: $dark-green;
+      width: 100%;
+
+      &::placeholder {
+        color: $dark-green;
+        opacity: 0.5;
+      }
+    }
+
+    .icon {
+      height: 30px;
+      margin-right: 12px;
+    }
+  }
+}
+
+.database__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  margin: 0 auto;
+  list-style-type: none;
+  max-width: calc(100% - 60px);
+  width: 1280px;
+
+  .database__item {
+    border: 3px solid $dark-green;
+    margin-bottom: 10px;
+    border-radius: 28px;
+    padding: 10px 16px;
+    color: $main-white;
+    font: 18px "Open Sans", sans-serif;
+    font-weight: 600;
+  }
+
+  .database__loading {
+    position: absolute;
+    transform: translateX(-22%);
+    left: 50%;
+  }
+
+  .database__loading--img {
+    height: 100px;
+    animation: spin 1.2s infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+  }
+
+  @media(max-width: 999px) {
+    grid-template-columns: 1fr;
+  }
+}
