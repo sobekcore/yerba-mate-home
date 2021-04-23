@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -245,7 +245,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 45px 20px 65px 20px;
+  margin: 45px 20px 60px 20px;
 }
 .database__input .database__input__box {
   display: flex;
@@ -297,6 +297,16 @@ a {
   position: absolute;
   transform: translateX(-22%);
   left: 50%;
+  animation: fadeIn 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .database__list .database__loading--img {
   height: 100px;

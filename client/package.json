@@ -4,7 +4,10 @@
   "author": "Sobek",
   "scripts": {
     "dev": "concurrently 'react-scripts start' 'npm run watch -s'",
-    "watch": "sass --watch ./src/styles/sass/index.scss ./src/styles/css/index.css",
+    "watch": "sass --watch './src/styles/sass/index.scss' './src/styles/css/index.css'",
+    "eslint": "eslint './src/**/*.jsx' --fix",
+    "stylelint": "npx stylelint './src/**/*.scss' --fix",
+    "lint": "npm run eslint -s && npm run stylelint -s",
     "build": "react-scripts build"
   },
   "dependencies": {
@@ -15,8 +18,19 @@
     "react-scripts": "^4.0.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "babel-eslint": "^10.1.0",
     "chokidar": "^3.5.1",
-    "concurrently": "^6.0.1"
+    "concurrently": "^6.0.1",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-scss": "^3.19.0"
   },
   "browserslist": {
     "production": [

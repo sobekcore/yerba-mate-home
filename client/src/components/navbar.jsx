@@ -6,7 +6,7 @@ export default function Navbar() {
   const databaseClass = location.pathname.match(/^\/mate/) ? " active" : "";
   const apiClass = location.pathname.match(/^\/api/) ? " active" : "";
 
-  return(
+  return (
     <div className="navbar">
       <ul className="navbar__list">
         <li className="navbar__item">
@@ -43,5 +43,5 @@ export default function Navbar() {
         </li>
       </ul>
     </div>
-  )
+  );
 }

@@ -1,5 +1,8 @@
 ## Yerba Mate Home
-Yerba Mate Home is a simple informational site about Mate. It has public API for use to anyone, as well as visual representation of it in user friendly GUI. Core of the app is back-end powered by **`Go`** which runs the whole site. Front-end of the app is made with **`React`**, which is built into static files, as well as **`Sass`** for easier and more convinient styling. However all the API data is held and processed by **`MySQL`** database. Everything of that is hosted on **`Heroku`**, thanks to them being one of the best choices for hosting Go web applications.
+Yerba Mate Home is a simple informational site about Mate. It has public API for use to anyone, as well as visual representation of it in user friendly GUI. Focused on being open-source and nice to use, so everyone can contribute to the project or at least use it.
+
+## Tools Used
+Service' back-end is powered by **`Go`** which runs the whole site. Front-end of the app is made with **`React`**, which is built into static files, as well as **`Sass`** for easier and more convinient styling. If we talk about more convenient development, the other tools used for that are **`ESLint`**, **`Stylelint`** and **`Prettier`** to keep the same coding style all along. However all the API data is held and processed by **`MySQL`** database. Everything of that is hosted on **`Heroku`**, thanks to them being one of the best choices for hosting Go web applications.
 
 ## How to contribute
 To add new entries visit **`YERBAS.md`** file, here you have a template for making suggestions for new entries with an example (yes, add that backslash to create new markdown line)

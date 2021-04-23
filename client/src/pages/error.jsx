@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 
 export default function ErrorPage() {
-  return(
+  return (
     <>
       <Navbar />
       <div className="center-div nav-offset">

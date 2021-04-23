@@ -15,13 +15,13 @@ export default class App extends Component {
     bg.id = "loader-exit";
 
     bg = document.getElementById("loader-exit");
-    if(bg.style.opacity == 0) {
+    if (bg.style.opacity == 0) {
       setTimeout(() => bg.remove(), 400);
     }
   }
 
   render() {
-    return(
+    return (
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -29,7 +29,7 @@ export default class App extends Component {
           <Route exact path="/mate" component={DatabasePage} />
           <Route exact path="/api" component={APIPage} />
           <Route exact path="/404" component={ErrorPage} />
-          <Redirect to="/404"/>
+          <Redirect to="/404" />
         </Switch>
       </Router>
     );
