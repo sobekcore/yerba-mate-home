@@ -8,6 +8,8 @@ $light-green: #9DC88D;
 $medium-green: #4D774E;
 $dark-green: #164A41;
 
+$mobile-width: 699px;
+
 * {
   padding: 0;
   margin: 0;
@@ -53,6 +55,10 @@ a {
 
 .nav-offset {
   margin-left: 54px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .center-div {

@@ -39,6 +39,11 @@ a {
 .nav-offset {
   margin-left: 54px;
 }
+@media (max-width: 699px) {
+  .nav-offset {
+    margin-left: 0;
+  }
+}
 
 .center-div {
   height: 100vh;
@@ -94,7 +99,6 @@ a {
   visibility: initial;
   cursor: pointer;
   width: 130px;
-  opacity: 1;
 }
 .navbar .navbar__list .navbar__item .navbar__item__link.active > .icon {
   filter: brightness(0) saturate(100%) invert(83%) sepia(63%) saturate(1740%) hue-rotate(322deg) brightness(99%) contrast(90%);
@@ -102,7 +106,7 @@ a {
 .navbar .navbar__list .navbar__item .navbar__item__link.active > .navbar__item__link__title {
   color: #F1B24A;
 }
-.navbar .navbar__list .navbar__item .navbar__item__link .icon {
+.navbar .navbar__list .navbar__item .icon {
   width: 30px;
   margin-top: 4px;
 }
@@ -123,18 +127,83 @@ a {
 .navbar .navbar__list .navbar__item .navbar__item__link__title .navbar__item__link__title--margin {
   margin-left: 10px;
 }
+@media (max-width: 699px) {
+  .navbar {
+    width: 100vw;
+  }
+  .navbar .navbar__list {
+    margin-top: 64px;
+  }
+  .navbar .navbar__list .navbar__item {
+    margin: 10px;
+  }
+  .navbar .navbar__list .navbar__item .navbar__item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #9DC88D;
+    border-radius: 44px;
+  }
+  .navbar .navbar__list .navbar__item .navbar__item__link:hover > .navbar__item__link__title {
+    visibility: visible;
+    width: 100px;
+  }
+  .navbar .navbar__list .navbar__item .navbar__item__link .icon {
+    margin-top: 0;
+  }
+  .navbar .navbar__list .navbar__item .navbar__item__link .navbar__item__link__title {
+    visibility: visible;
+    background: none;
+    margin: 0 0 0 22px;
+    border-radius: 0;
+    transition: none;
+    width: 100px;
+  }
+  .navbar .navbar__list .navbar__item .navbar__item__link .navbar__item__link__title .navbar__item__link__title--margin {
+    margin-left: 0;
+  }
+}
+
+.navbar--hide {
+  display: none;
+}
+
+.navbar--hamburger {
+  display: none;
+  border: none;
+  outline: none;
+  position: fixed;
+  z-index: 101;
+  background: #164A41;
+  padding: 8px 14px;
+  border-radius: 0 3px 10px 3px;
+}
+.navbar--hamburger .icon {
+  width: 38px;
+}
+@media (max-width: 699px) {
+  .navbar--hamburger {
+    display: block;
+  }
+}
 
 .article {
   width: 960px;
   max-width: calc(100% - 50px);
   margin: 0 auto;
   padding-top: 40px;
+  padding-bottom: 55px;
 }
 .article .article__title {
   font: bold 36px "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #EDF5E1;
   padding-top: 25px;
+}
+@media (max-width: 699px) {
+  .article .article__title {
+    font-size: 28px;
+  }
 }
 .article .article__title.build {
   text-align: center;
@@ -144,6 +213,11 @@ a {
   font-weight: 600;
   color: #EDF5E1;
   margin: 14px 0;
+}
+@media (max-width: 699px) {
+  .article .article__p {
+    font-size: 16px;
+  }
 }
 
 #wrapper {
@@ -156,7 +230,12 @@ a {
   color: #EDF5E1;
   text-align: center;
   padding: 12px 0;
-  margin: auto 0;
+  margin: auto 12px;
+}
+@media (max-width: 699px) {
+  #wrapper #title {
+    font-size: 48px;
+  }
 }
 #wrapper .home {
   display: grid;
@@ -198,6 +277,7 @@ a {
   transition: 0.4s background, 0.45s box-shadow;
 }
 #wrapper .home .home__fragment .home__fragment__text .home__fragment__text--title {
+  font-size: 27px;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #EDF5E1;
@@ -225,20 +305,17 @@ a {
   }
 }
 
-#title {
-  font: bold 60px "Open Sans", sans-serif;
-  color: #EDF5E1;
-  text-align: center;
-  padding: 12px 0;
-  margin: auto 0;
-}
-
 .database__title {
   font: bold 38px "Open Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #EDF5E1;
   padding: 65px 15px 0 15px;
+}
+@media (max-width: 699px) {
+  .database__title {
+    font-size: 32px;
+  }
 }
 
 .database__input {
@@ -270,6 +347,11 @@ a {
   color: #164A41;
   opacity: 0.5;
 }
+@media (max-width: 699px) {
+  .database__input .database__input__box .database__input__box--field {
+    font-size: 20px;
+  }
+}
 .database__input .database__input__box .icon {
   height: 30px;
   margin-right: 12px;
@@ -292,6 +374,11 @@ a {
   color: #EDF5E1;
   font: 18px "Open Sans", sans-serif;
   font-weight: 600;
+}
+@media (max-width: 699px) {
+  .database__list .database__item {
+    font-size: 16px;
+  }
 }
 .database__list .database__loading {
   position: absolute;

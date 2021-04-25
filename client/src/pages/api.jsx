@@ -19,8 +19,10 @@ export default function APIPage() {
           </p>
           <h2 className="article__title">How to use it?</h2>
           <p className="article__p">
-            The usage of our API is really simple, currently there are only 2 posiblle endpoints,
-            which are either for all of the entries and for one specific entry. To use them
+            The usage of our API is really simple, currently there are only 2 possible endpoints,
+            which are either for all of the entries or for one specific entry. To use them simply
+            fetch from any of the endpoints which are listed in its section. You shouldn't need any
+            CORS setup to use it, it should work from the get go.
           </p>
           <h2 className="article__title">Endpoints</h2>
           <p className="article__p">
@@ -28,7 +30,7 @@ export default function APIPage() {
             <a className="link" href="/api/mate">
               {allEntries}
             </a>
-            . From there you can access all of our data. All of the possibilites will be listed
+            . From on there you can access all of our data. All of the possibilites will be listed
             below.
             <span className="api__endpoint">
               To acces all of the entries:

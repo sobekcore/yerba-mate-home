@@ -27,6 +27,15 @@ export default function AboutPage() {
             required, you can add some mate into our YERBAS.md file so we can add them into the
             database.
           </p>
+          <h2 className="article__title">Technicalities</h2>
+          <p className="article__p">
+            Our service is made with various diferent tools. One of them is service' back-end which
+            powers the whole site, it is made with Go. The back-end is made in a way to serve our
+            front-end, this one is made with React, which is later built into static files. Then we
+            must get our data somehow, in this case we are using MySQL database to get the data and
+            process it. All of that is hosted on Heroku, which is one of the best ways to host your
+            Go web applications.
+          </p>
           <h2 className="article__title build">Service is still in build</h2>
         </div>
       </div>

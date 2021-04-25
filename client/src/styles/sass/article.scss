@@ -3,12 +3,17 @@
   max-width: calc(100% - 50px);
   margin: 0 auto;
   padding-top: 40px;
+  padding-bottom: 55px;
 
   .article__title {
     font: bold 36px "Open Sans", sans-serif;
     text-transform: uppercase;
     color: $main-white;
     padding-top: 25px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 28px;
+    }
 
     &.build {
       text-align: center;
@@ -20,5 +25,9 @@
     font-weight: 600;
     color: $main-white;
     margin: 14px 0;
+
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+    }
   }
 }

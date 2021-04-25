@@ -8,7 +8,11 @@
     color: $main-white;
     text-align: center;
     padding: 12px 0;
-    margin: auto 0;
+    margin: auto 12px;
+
+    @media (max-width: $mobile-width) {
+      font-size: 48px;
+    }
   }
 
   .home {
@@ -57,6 +61,7 @@
           0.45s box-shadow;
 
         .home__fragment__text--title {
+          font-size: 27px;
           margin-bottom: 10px;
           text-transform: uppercase;
           color: $main-white;
@@ -94,12 +99,4 @@
       }
     }
   }
-}
-
-#title {
-  font: bold 60px "Open Sans", sans-serif;
-  color: $main-white;
-  text-align: center;
-  padding: 12px 0;
-  margin: auto 0;
 }
