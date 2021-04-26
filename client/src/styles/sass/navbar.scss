@@ -74,6 +74,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    transition: 0.25s ease-in-out;
     width: 100vw;
 
     .navbar__list {
@@ -101,7 +102,7 @@
           .navbar__item__link__title {
             visibility: visible;
             background: none;
-            margin: 0 0 0 22px;
+            margin: 0 0 0 12px;
             border-radius: 0;
             transition: none;
             width: 100px;
@@ -116,8 +117,9 @@
   }
 }
 
-.navbar--hide {
-  display: none;
+.navbar.hide {
+  opacity: 0;
+  z-index: -99;
 }
 
 .navbar--hamburger {
@@ -129,6 +131,8 @@
   background: $dark-green;
   padding: 8px 14px;
   border-radius: 0 3px 10px 3px;
+  height: 56px;
+  top: 0;
 
   .icon {
     width: 38px;

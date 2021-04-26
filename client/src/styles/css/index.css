@@ -17,6 +17,19 @@ body {
   color: #F1B24A;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #9DC88D -50%, #4D774E 260%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #164A41;
+  border-radius: 8px;
+}
+
 img {
   user-select: none;
 }
@@ -129,6 +142,7 @@ a {
 }
 @media (max-width: 699px) {
   .navbar {
+    transition: 0.25s ease-in-out;
     width: 100vw;
   }
   .navbar .navbar__list {
@@ -154,7 +168,7 @@ a {
   .navbar .navbar__list .navbar__item .navbar__item__link .navbar__item__link__title {
     visibility: visible;
     background: none;
-    margin: 0 0 0 22px;
+    margin: 0 0 0 12px;
     border-radius: 0;
     transition: none;
     width: 100px;
@@ -164,8 +178,9 @@ a {
   }
 }
 
-.navbar--hide {
-  display: none;
+.navbar.hide {
+  opacity: 0;
+  z-index: -99;
 }
 
 .navbar--hamburger {
@@ -177,6 +192,8 @@ a {
   background: #164A41;
   padding: 8px 14px;
   border-radius: 0 3px 10px 3px;
+  height: 56px;
+  top: 0;
 }
 .navbar--hamburger .icon {
   width: 38px;
@@ -219,6 +236,12 @@ a {
     font-size: 16px;
   }
 }
+@media (max-width: 699px) {
+  .article {
+    padding-top: 45px;
+    padding-bottom: 15px;
+  }
+}
 
 #wrapper {
   display: grid;
@@ -234,7 +257,7 @@ a {
 }
 @media (max-width: 699px) {
   #wrapper #title {
-    font-size: 48px;
+    font-size: 46px;
   }
 }
 #wrapper .home {
@@ -285,6 +308,16 @@ a {
 #wrapper .home .home__fragment .home__fragment__text .home__fragment__text--title .icon {
   width: 30px;
   transform: translateY(16%);
+}
+@media (max-width: 699px) {
+  #wrapper .home .home__fragment .home__fragment__text .home__fragment__text--title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 699px) {
+  #wrapper .home .home__fragment .home__fragment__text {
+    font-size: 16px;
+  }
 }
 #wrapper .home .home__fragment .home__fragment__text:hover {
   background: rgba(77, 119, 78, 0.85);
@@ -361,8 +394,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
-  margin: 0 auto;
   list-style-type: none;
+  margin: 0 auto 55px auto;
   max-width: calc(100% - 60px);
   width: 1280px;
 }
@@ -387,6 +420,11 @@ a {
   animation: fadeIn 0.5s;
   animation-fill-mode: forwards;
 }
+@media (max-width: 699px) {
+  .database__list .database__loading {
+    transform: translateX(-50%);
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -410,6 +448,7 @@ a {
 @media (max-width: 999px) {
   .database__list {
     grid-template-columns: 1fr;
+    margin-bottom: 15px;
   }
 }
 

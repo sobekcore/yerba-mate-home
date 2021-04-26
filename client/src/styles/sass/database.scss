@@ -56,8 +56,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
-  margin: 0 auto;
   list-style-type: none;
+  margin: 0 auto 55px auto;
   max-width: calc(100% - 60px);
   width: 1280px;
 
@@ -81,6 +81,10 @@
     left: 50%;
     animation: fadeIn 0.5s;
     animation-fill-mode: forwards;
+
+    @media (max-width: $mobile-width) {
+      transform: translateX(-50%);
+    }
   }
 
   @keyframes fadeIn {
@@ -100,5 +104,6 @@
 
   @media (max-width: 999px) {
     grid-template-columns: 1fr;
+    margin-bottom: 15px;
   }
 }

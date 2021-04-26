@@ -18,14 +18,22 @@ export default function Navbar() {
   function checkMobile() {
     useEffect(() => {
       if (window.innerWidth <= 699) {
+        // Disable transition on load
+        let nav = document.getElementsByClassName("navbar");
+        nav[0].style.transition = "none";
         setState(!state);
+
+        // Set back transition after 100ms
+        setTimeout(() => {
+          nav[0].style.transition = "0.25s ease-in-out";
+        }, 100);
       }
     }, []);
   }
 
   return (
     <>
-      <div className={state ? "navbar--hide" : "navbar"}>
+      <div className={state ? "navbar hide" : "navbar"}>
         <ul className="navbar__list">
           <li className="navbar__item">
             <a className={"navbar__item__link" + homeClass} href="/">

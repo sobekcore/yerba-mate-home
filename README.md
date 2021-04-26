@@ -7,8 +7,8 @@ Service' back-end is powered by **`Go`** which runs the whole site. Front-end of
 ## How to contribute
 To add new entries visit **`YERBAS.md`** file, here you have a template for making suggestions for new entries with an example (yes, add that backslash to create new markdown line)
 ```
-[*] <brand> - <country> // <github-username> \
-[*] Pajarito - Paraguay // sobekcore \
+[?] <brand> - <country> // <github-username> \
+[?] Pajarito - Paraguay // sobekcore \
 ```
 Oh and one last request, please add new entries at the bottom of the file. For this kind of task anyone can contribute, the only requirement is to write any mate thats is not currently in our database.
 
@@ -21,8 +21,7 @@ When you're in root directory of the project simply run:
 ```
 go run main.go
 ```
-then the Go webserver will serve static React files from **`client/build`** directory. And then your app is running, its that simple.\
-Essentially the app needs only Go backend files and static React files to run, which is only very few small files to get it going. Thats a very lightweight and efficient solution for that.
+then the Go webserver will serve static React files from **`client/build`** directory. And then your app is running, its that simple. Essentially the app needs only Go backend files and static React files to run, which is only very few small files to get it going. Thats a very lightweight and efficient solution for that.
 
 If you'd like to edit site on the front-end side then you must enter **`client`** folder and run:
 ```
